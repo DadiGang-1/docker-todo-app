@@ -2,6 +2,6 @@ const GREETING = ['Hello world!', 'Hola mundo!', 'Bonjour le monde!', 'Hallo Wel
 
 module.exports = async (req, res) => {
     res.send({
-        greeting: GREETING,
+        greeting: GREETINGS[Math.floor(Math.random() * GREETINGS.length)],
     });
 };
